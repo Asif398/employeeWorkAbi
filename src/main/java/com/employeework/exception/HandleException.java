@@ -42,6 +42,7 @@ public class HandleException {
                 request.getDescription(false) //false dont give the client information only giv the url details
                 //url is for debugging beacuse which url is occurr the error then it find the error easily way
         );
+        System.out.pritnln("hello world");
         return new ResponseEntity<>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
