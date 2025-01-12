@@ -39,7 +39,7 @@ public class EmployeeController {
 //        System.out.println(employee.getMobile());
 //        return "hello";//its return back hello in the postman
 //    }
-
+    \
 //    @PostMapping("/addEmployee")
 //    public ResponseEntity<String> addEmployee(
 //            @RequestBody Employee employee
@@ -87,7 +87,6 @@ public class EmployeeController {
         //check error are happened or not happend use the hasError(). 1 added  valid dependency  ,  2 add valid annotation in Dto ,
         // then 3 added @Valid annotation ,then i 4 added BindingResult then added the 5 if condition inside use hasError()
         //BindingResult help us to capture the error inside the BindingResult has take hasError() method it will help us to chek the error is happend or not
-
 
         if (result.hasErrors()) {
             return new ResponseEntity<>(result.getFieldError().getDefaultMessage(), HttpStatus.INTERNAL_SERVER_ERROR);

@@ -9,7 +9,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "employee")
 public class Employee {
-    @Id
+    @Idshsxhbxs
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
